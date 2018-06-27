@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #292c3b;
+}
+
+.wrapper-login-register {
+    padding: 100px 0 20px 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+
+@media only screen and (max-width : 768px) {
+    .wrapper-login-register {
+        padding: 50px 25px;
+    }
+}

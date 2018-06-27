@@ -1,0 +1,21 @@
+.owners{
+    width: 374px;
+    margin: 0 auto;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    color: #65686f;
+
+}
+.owners__title{
+    text-decoration: underline;
+}
+.owners__item{
+    margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .owners {
+        max-width: 300px;
+        width: 100%;
+    }
+}

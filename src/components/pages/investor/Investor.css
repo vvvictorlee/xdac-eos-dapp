@@ -1,0 +1,51 @@
+import React, { Component, Fragment } from 'react';
+import Steps from './parts/steps/Steps';
+import './Register.css';
+import axios from 'axios';
+import TransferList from "./parts/transfers/TransferList";
+
+class Register extends Component {
+
+    state = {
+        company: {},
+        test: false
+    };
+
+
+    defineStep = async () => {
+
+        let token = 'yqcxqvf2';
+
+        let company = await axios.get('http://localhost:3000/company/' + token).then( response => {
+            return response.data.data;
+        }).catch( e => {
+            return {};
+        });
+
+        this.setState(...this.state, {company: company});
+    };
+
+    componentDidMount() {
+        this.defineStep();
+    }
+
+    render() {
+        return (
+            <Fragment>
+                <Steps active={4}/>
+
+                <div className="wrapper-login-register">
+                    {/*<Step1 />*/}
+                    {/*<Step2 />*/}
+                    {/*<Step3 />*/}
+                    {/*<Step4 />*/}
+
+                    <TransferList transfers={this.state.company.transfers} />
+                </div>
+
+            </Fragment>
+        )
+    }
+}
+
+export default Register

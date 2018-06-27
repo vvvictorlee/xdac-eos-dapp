@@ -1,0 +1,96 @@
+.transactions{
+    text-align: center;
+}
+.transactions__title{
+    font-size: 24px;
+    color: #ffffff;
+    padding: 40px 0 25px 0;
+}
+
+.transactions__table{
+    color: #fff;
+}
+
+.transaction{
+
+}
+
+.transaction__btn{
+    max-width: 80px;
+    width: 100%;
+    border: none;
+    margin: 2px 5px;
+    color: #fff;
+    border-radius: 15px;
+}
+
+.transaction__btn:hover{
+    cursor: pointer;
+
+}
+
+.transaction__btn-text{
+
+}
+
+.transaction__btn-icon{
+    display: none;
+}
+
+.transaction__approve{
+    background: #08ACF3;
+}
+
+.transaction__approve:hover{
+    background: #0172a2;
+}
+
+.transaction__refund{
+    background: #015478;
+}
+
+.transaction__refund:hover{
+    background: #05415a;
+}
+
+.transactions .ReactTable{
+    color: #fff;
+    border: 1px solid #fff;
+}
+.transactions .ReactTable .rt-tbody .rt-tr-group {
+    border-bottom: solid 1px #fff;
+}
+.transactions .ReactTable .-pagination {
+    border-top: 2px solid #fff;
+}
+.transactions .ReactTable .rt-thead.-header{
+    border-bottom: 2px solid #fff;
+}
+.transactions .ReactTable .-pagination .-btn{
+    color: #fff;
+}
+
+.transactions .ReactTable .rt-tbody .rt-td {
+    height: 44px;
+    vertical-align: middle;
+    line-height: 28px;
+}
+
+
+@media only screen and (max-width : 992px) {
+
+    .transaction__btn{
+        width: 40px;
+        height: 25px;
+    }
+
+    .transaction__btn-text{
+        display: none;
+
+    }
+
+    .transaction__btn-icon{
+        display: block;
+        margin: 0 auto;
+    }
+}

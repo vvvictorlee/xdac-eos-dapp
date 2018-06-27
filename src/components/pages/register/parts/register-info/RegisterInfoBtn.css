@@ -1,0 +1,20 @@
+.register-info-btn{
+    display: block;
+    margin: 15px auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #019bdb;
+    line-height: 50px;
+    text-align: center;
+    color: #65686f;
+    background: none;
+    font-size: 24px
+}
+.register-info-btn:hover{
+    cursor: pointer;
+}
+.register-info-btn:focus,
+.register-info-btn:active{
+    outline: none;
+}

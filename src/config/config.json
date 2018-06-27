@@ -1,0 +1,21 @@
+{
+  "development": {
+    "network": {
+      "blockchain":"eos",
+      "host": "localhost",
+      "port": "8888"
+    },
+    "backendUrl": "http://localhost:3000/",
+    "currency": "XDAC"
+  },
+
+  "production": {
+    "network": {
+      "blockchain":"eos",
+      "host": "localhost",
+      "port": "8888"
+    },
+    "backendUrl": "http://localhost:3000/",
+    "currency": "XDAC"
+  }
+}
